@@ -1,0 +1,55 @@
+<header
+class="navbar"
+[class.home]="isHome"
+[class.internal]="!isHome">
+
+<div class="logo">
+
+<!--<img
+src="/images/navBarLogo.png"
+alt="logo">-->
+
+<span>
+
+La Esmeralda Gourmet
+
+</span>
+
+</div>
+
+<div class="menu-btn"
+(click)="toggleMenu()">
+
+☰
+
+</div>
+
+<nav>
+
+<ul [class.active]="menuOpen">
+    <li>
+        <a routerLink="/">
+        Home
+        </a>
+    </li>
+    <li>
+        <a routerLink="/products">
+        Products
+        </a>
+    </li>
+    <li>
+        <a routerLink="/recipes">
+        Recipes
+        </a>
+    </li>
+    <li>
+        <a routerLink="/contact">
+        Contact
+        </a>
+    </li>
+</ul>
+
+</nav>
+
+</header>
+

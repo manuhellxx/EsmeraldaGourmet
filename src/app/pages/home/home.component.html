@@ -1,0 +1,92 @@
+<section class="hero">
+
+    <div class="slider">
+
+<div
+class="slide"
+*ngFor="let slide of slides; let i=index"
+[class.active]="i === currentSlide"
+[style.backgroundImage]="'url(' + slide.image + ')'">
+
+</div>
+
+</div>
+
+<div class="overlay">
+
+<div class="hero-content">
+
+<span>
+Discover Flavorful Horizons
+</span>
+
+<h1>
+Your Culinary Adventure Begins Here
+</h1>
+
+<p>
+
+Explore premium dishes and culinary experiences.
+
+</p>
+
+<button>
+
+Explore Menu
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="cards">
+
+<h2>
+Our Exclusive Items
+</h2>
+
+<div class="card-container">
+
+<div class="food-card">
+
+<img src="assets/breakfast.png">
+
+<h3>Breakfast</h3>
+
+<p>
+Fresh and delicious morning meals
+</p>
+
+</div>
+
+<div class="food-card">
+
+<img src="assets/lunch.png">
+
+<h3>Lunch</h3>
+
+<p>
+Premium lunch experience
+</p>
+
+</div>
+
+<div class="food-card">
+
+<img src="assets/dinner.png">
+
+<h3>Dinner</h3>
+
+<p>
+Elegant dinner selection
+</p>
+
+</div>
+
+</div>
+
+</section>
